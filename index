@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PHI - Know Your Client</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: url('background-image.jpg') no-repeat center center;
+      background-size: cover;
+      padding: 60px 20px;
+      text-align: center;
+      color: white;
+    }
+    header h1 {
+      font-size: 36px;
+      margin: 0;
+    }
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+    main {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      border-bottom: 2px solid #d4af37;
+      padding-bottom: 5px;
+      margin-top: 40px;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .checkbox-group, .radio-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .checkbox-group label, .radio-group label {
+      flex: 1 1 45%;
+    }
+    .button {
+      background-color: #d4af37;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 4px;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 12px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>KNOW YOUR CLIENT</h1>
+    <p>Ajude-nos a encontrar o imóvel dos seus sonhos</p>
+  </header>
+  <main>
+    <p>Complete este formulário para que possamos compreender suas preferências e necessidades específicas...</p>
+
+    <h2>Informações Pessoais</h2>
+    <label>Nome Completo*</label>
+    <input type="text">
+    <label>Email*</label>
+    <input type="email">
+    <label>Telefone*</label>
+    <input type="tel">
+    <label>Nacionalidade</label>
+    <input type="text">
+    <label>Como conheceu nossa imobiliária?</label>
+    <select><option>Selecione uma opção</option></select>
+
+    <h2>Tipo de Propriedade</h2>
+    <div class="checkbox-group">
+      <label><input type="checkbox"> Apartamento de Luxo</label>
+      <label><input type="checkbox"> Cobertura</label>
+      <label><input type="checkbox"> Moradia/Villa</label>
+      <label><input type="checkbox"> Propriedade Histórica</label>
+      <label><input type="checkbox"> Terreno para Construção</label>
+      <label><input type="checkbox"> Quinta/Herdade</label>
+    </div>
+    <label>Outra tipologia específica:</label>
+    <input type="text">
+
+    <h2>Preferências de Localização</h2>
+    <div class="checkbox-group">
+      <label><input type="checkbox"> Lisboa</label>
+      <label><input type="checkbox"> Porto</label>
+      <label><input type="checkbox"> Algarve</label>
+      <label><input type="checkbox"> Cascais/Estoril</label>
+      <label><input type="checkbox"> Sintra</label>
+      <label><input type="checkbox"> Madeira</label>
+      <label><input type="checkbox"> Douro</label>
+      <label><input type="checkbox"> Comporta</label>
+    </div>
+    <label>Localização Específica:</label>
+    <input type="text">
+    <label>Tipo de Localização:</label>
+    <select><option>Selecione uma opção</option></select>
+
+    <h2>Características do Imóvel</h2>
+    <label>Quartos mínimos:</label><select></select>
+    <label>Casas de Banho mínimas:</label><select></select>
+    <label>Estado do Imóvel:</label><select></select>
+    <label>Área mínima (m²):</label><input type="text">
+    <label>Área do Terreno mínima (m²):</label><input type="text">
+
+    <div class="checkbox-group">
+      <label><input type="checkbox"> Piscina</label>
+      <label><input type="checkbox"> Jardim</label>
+      <label><input type="checkbox"> Garagem</label>
+      <label><input type="checkbox"> Vista Panorâmica</label>
+      <label><input type="checkbox"> Terraço</label>
+      <label><input type="checkbox"> Elevador</label>
+      <label><input type="checkbox"> Segurança 24h</label>
+      <label><input type="checkbox"> Spa/Jacuzzi</label>
+      <label><input type="checkbox"> Ginásio</label>
+      <label><input type="checkbox"> Casa Inteligente</label>
+      <label><input type="checkbox"> Adega</label>
+      <label><input type="checkbox"> Lareira</label>
+    </div>
+    <label>Outros requisitos:</label>
+    <textarea rows="4"></textarea>
+
+    <h2>Orçamento e Prazo</h2>
+    <label>Orçamento Mínimo (€):</label><input type="text">
+    <label>Orçamento Máximo (€):</label><input type="text">
+    <label>Prazo para Aquisição:</label><select></select>
+    <label>Financiamento:</label><select></select>
+
+    <h2>Motivação e Propósito</h2>
+    <div class="radio-group">
+      <label><input type="radio" name="proposito"> Residência Principal</label>
+      <label><input type="radio" name="proposito"> Segunda Residência/Férias</label>
+      <label><input type="radio" name="proposito"> Investimento</label>
+      <label><input type="radio" name="proposito"> Aposentadoria</label>
+      <label><input type="radio" name="proposito"> Mudança para Portugal</label>
+      <label><input type="radio" name="proposito"> Outro</label>
+    </div>
+    <label>Fatores que motivam a investir em Portugal:</label>
+    <textarea rows="3"></textarea>
+    <label>Você já conhece Portugal?</label>
+    <div class="radio-group">
+      <label><input type="radio" name="conhece"> Sim</label>
+      <label><input type="radio" name="conhece"> Não</label>
+    </div>
+    <label>Está interessado no Visto Gold?</label>
+    <div class="radio-group">
+      <label><input type="radio" name="vistogold"> Sim</label>
+      <label><input type="radio" name="vistogold"> Não</label>
+      <label><input type="radio" name="vistogold"> Talvez</label>
+    </div>
+
+    <h2>Serviços Adicionais</h2>
+    <div class="checkbox-group">
+      <label><input type="checkbox"> Consultoria Jurídica</label>
+      <label><input type="checkbox"> Consultoria Fiscal</label>
+      <label><input type="checkbox"> Apoio para Vistos/Residência</label>
+      <label><input type="checkbox"> Serviços de Renovação/Decoração</label>
+      <label><input type="checkbox"> Gestão de Propriedade</label>
+      <label><input type="checkbox"> Serviços de Relocation</label>
+    </div>
+
+    <h2>Comentários Adicionais</h2>
+    <textarea rows="4"></textarea>
+
+    <label><input type="checkbox"> Concordo com a Política de Privacidade.</label>
+    <br><br>
+    <button class="button">Enviar Formulário</button>
+    <div class="footer">
+      © 2025 PHI - Luxury Real Estate. Todos os direitos reservados.
+    </div>
+  </main>
+</body>
+</html>
